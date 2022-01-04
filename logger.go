@@ -12,14 +12,14 @@ var l int
 
 func Log(t string) {
 	timeNow := time.Now()
-	log := timeNow.Format(time.UnixDate) + " " + n + "   [LOG] - " + t
-	fmt.Println(cl.ChangefG(log, "green"))
+	log := timeNow.Format(time.UnixDate) + "   " + n + "   [LOG] - " + t
+	fmt.Println(cl.ChangeFG(log, "green"))
 }
 
 func Warn(t string) {
 	timeNow := time.Now()
-	log := timeNow.Format(time.UnixDate) + " " + n + "  [WARN] - " + t
-	fmt.Println(cl.ChangefG(log, "yellow"))
+	log := timeNow.Format(time.UnixDate) + "   " + n + "  [WARN] - " + t
+	fmt.Println(cl.ChangeFG(log, "yellow"))
 }
 
 func Info(t string) {
@@ -27,14 +27,14 @@ func Info(t string) {
 		return
 	}
 	timeNow := time.Now()
-	log := timeNow.Format(time.UnixDate) + " " + n + "  [INFO] - " + t
-	fmt.Println(cl.ChangefG(log, "grey"))
+	log := timeNow.Format(time.UnixDate) + "   " + n + "  [INFO] - " + t
+	fmt.Println(cl.ChangeFG(log, "grey"))
 }
 
 func Error(t string) {
 	timeNow := time.Now()
-	log := timeNow.Format(time.UnixDate) + " " + n + " [Error] - " + t
-	fmt.Println(cl.ChangefG(log, "red"))
+	log := timeNow.Format(time.UnixDate) + "   " + n + " [Error] - " + t
+	fmt.Println(cl.ChangeFG(log, "red"))
 }
 
 func Debug(t string) {
@@ -42,8 +42,8 @@ func Debug(t string) {
 		return
 	}
 	timeNow := time.Now()
-	log := timeNow.Format(time.UnixDate) + " " + n + " [Debug] - " + t
-	fmt.Println(cl.ChangefG(log, "magenta"))
+	log := timeNow.Format(time.UnixDate) + "   " + n + " [Debug] - " + t
+	fmt.Println(cl.ChangeFG(log, "magenta"))
 }
 
 // Create logger
