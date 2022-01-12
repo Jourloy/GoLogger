@@ -15,20 +15,26 @@ $ go get github.com/Jourloy/GoLogger
 ### Import package
 
 ```golang
-import logger "github.com/Jourloy/GoLogger"
+import "github.com/Jourloy/GoLogger"
 ```
 
 ### Init in your file
 
 ```golang
+var logger GoLogger.Logger
+
 func init() {
-    logger.New("all", "File name")
+    logger = GoLogger.New(1, "Main")
 }
 ```
 
-Logger have two levels:
-- `all` - this is all output 
-- `prod` - this is only LOG, WARN and ERROR output
+Logger have 5 levels:
+
+-   1 - Error
+-   2 - Warn
+-   3 - Log
+-   4 - Info
+-   5 - Debug
 
 ### Usage
 
