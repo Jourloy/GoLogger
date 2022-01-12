@@ -93,6 +93,8 @@ func (l Logger) Warn(t string) bool {
 
 // Green messages for success or just useful moments
 //
+// Level: 3
+//
 // Example
 //
 //     logger.Log("Success")
@@ -108,6 +110,8 @@ func (l Logger) Log(t string) bool {
 
 // Grey messages just for moments when you want get some information
 //
+// Level: 4
+//
 // Example
 //
 //     logger.Info(strconv.Itoa(len(members)))
@@ -122,6 +126,8 @@ func (l Logger) Info(t string) bool {
 }
 
 // Purple messages for debugging
+//
+// Level: 5
 //
 // Example
 //
